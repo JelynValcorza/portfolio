@@ -32,7 +32,8 @@ export function SectionHeading({
       )}
     >
       {label && (
-        <span className="inline-block text-xs font-semibold text-gradient uppercase tracking-[0.15em] mb-3 px-3 py-1.5 rounded-full bg-blue-500/6 dark:bg-blue-400/6 border border-blue-500/20 dark:border-blue-400/20">
+        <span className="inline-flex items-center gap-2 text-[11px] font-semibold font-mono text-gradient uppercase tracking-[0.2em] mb-3 px-3 py-1.5 rounded-full bg-blue-500/6 dark:bg-blue-400/6 border border-blue-500/20 dark:border-blue-400/20">
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
           {label}
         </span>
       )}
@@ -41,7 +42,7 @@ export function SectionHeading({
       </h2>
       <div
         className={cn(
-          "mt-3 h-0.5 w-16 rounded-full bg-gradient-to-r from-blue-500 to-violet-600",
+          "mt-3 h-0.5 w-20 rounded-full bg-linear-to-r from-sky-500 via-cyan-400 to-teal-400",
           align === "center" && "mx-auto",
         )}
       />

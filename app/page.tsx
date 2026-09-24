@@ -82,17 +82,16 @@ export default function Home() {
       {/* LiquidChrome Background */}
       <div className="fixed inset-0 -z-10">
         <LiquidChrome
-          baseColor={[
-            0.7568627450980392, 0.7568627450980392, 0.7568627450980392,
-          ]}
-          speed={0.3}
-          amplitude={0.3}
+          baseColor={[0.0823529412, 0.1882352941, 0.2784313725]}
+          speed={0.22}
+          amplitude={0.22}
           interactive
         />
+        <div className="absolute inset-0 bg-linear-to-b from-sky-400/8 via-transparent to-cyan-300/8 dark:from-sky-300/10 dark:to-cyan-300/10" />
       </div>
 
       {/* Noise Overlay */}
-      <div className="fixed -inset-[50%] h-[200%] w-[200%] animate-noise opacity-[0.035] pointer-events-none z-[9999]" />
+      <div className="fixed inset-[-50%] h-[200%] w-[200%] animate-noise opacity-[0.025] pointer-events-none z-9999" />
 
       <LoadingScreen />
       <ScrollProgress />

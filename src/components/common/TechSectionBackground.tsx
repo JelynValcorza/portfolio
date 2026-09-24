@@ -13,16 +13,16 @@ interface TechSectionBackgroundProps {
 
 const toneStyles: Record<Tone, { top: string; bottom: string }> = {
   blue: {
-    top: "bg-blue-500/14 dark:bg-blue-400/12",
-    bottom: "bg-cyan-500/12 dark:bg-cyan-400/10",
+    top: "bg-sky-500/14 dark:bg-sky-400/14",
+    bottom: "bg-cyan-500/12 dark:bg-cyan-400/12",
   },
   cyan: {
-    top: "bg-cyan-500/14 dark:bg-cyan-400/12",
-    bottom: "bg-sky-500/12 dark:bg-sky-400/10",
+    top: "bg-cyan-500/16 dark:bg-cyan-400/14",
+    bottom: "bg-teal-500/14 dark:bg-teal-400/12",
   },
   emerald: {
-    top: "bg-emerald-500/14 dark:bg-emerald-400/12",
-    bottom: "bg-blue-500/12 dark:bg-blue-400/10",
+    top: "bg-emerald-500/15 dark:bg-emerald-400/14",
+    bottom: "bg-sky-500/12 dark:bg-sky-400/12",
   },
 };
 
@@ -40,13 +40,14 @@ export function TechSectionBackground({
     >
       <ParticleCanvas
         particleCount={particleCount}
-        maxDistance={120}
-        speed={0.24}
-        dotAlpha={0.28}
-        lineAlpha={0.12}
+        maxDistance={126}
+        speed={0.22}
+        dotAlpha={0.24}
+        lineAlpha={0.1}
       />
 
-      <div className="absolute inset-0 opacity-[0.34] dark:opacity-[0.2] bg-[radial-gradient(circle_at_center,rgba(148,163,184,0.22)_1px,transparent_1px)] bg-size-[30px_30px]" />
+      <div className="tech-grid absolute inset-0 opacity-[0.28] dark:opacity-[0.2]" />
+      <div className="tech-scanlines absolute inset-0 opacity-[0.18] dark:opacity-[0.24]" />
 
       <div
         className={cn(
@@ -61,7 +62,7 @@ export function TechSectionBackground({
         )}
       />
 
-      <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-background/55 dark:to-background/70" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/8 to-background/58 dark:via-background/10 dark:to-background/74" />
     </div>
   );
 }
