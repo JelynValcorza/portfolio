@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E40AF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g)"/>
+  <rect x="1" y="1" width="598" height="448" fill="none" stroke="#E2E8F0" stroke-width="1" rx="8"/>
+  <path d="M280 185 L300 165 L320 185 M300 165 L300 225 M270 205 L330 205" stroke="#94A3B8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="300" y="260" text-anchor="middle" fill="#94A3B8" font-size="14" font-family="system-ui, sans-serif">Certificate</text>
+</svg>

@@ -1,0 +1,58 @@
+import type { Certificate } from "@/src/types";
+
+export const certificates: Certificate[] = [
+  {
+    id: "cert-1",
+    title: "Meta Frontend Developer",
+    issuer: "Meta (Coursera)",
+    date: "2024-03",
+    image: "/certificates/placeholder.svg",
+    url: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    credentialId: "META-FED-2024",
+  },
+  {
+    id: "cert-2",
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2023-11",
+    image: "/certificates/placeholder.svg",
+    url: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    credentialId: "AWS-CCP-2023",
+  },
+  {
+    id: "cert-3",
+    title: "JavaScript Algorithms & Data Structures",
+    issuer: "freeCodeCamp",
+    date: "2023-08",
+    image: "/certificates/placeholder.svg",
+    url: "https://www.freecodecamp.org",
+    credentialId: "FCC-JSADS-2023",
+  },
+  {
+    id: "cert-4",
+    title: "Responsive Web Design",
+    issuer: "freeCodeCamp",
+    date: "2023-05",
+    image: "/certificates/placeholder.svg",
+    url: "https://www.freecodecamp.org",
+    credentialId: "FCC-RWD-2023",
+  },
+  {
+    id: "cert-5",
+    title: "Google UX Design Certificate",
+    issuer: "Google (Coursera)",
+    date: "2023-02",
+    image: "/certificates/placeholder.svg",
+    url: "https://www.coursera.org/professional-certificates/google-ux-design",
+    credentialId: "GOOGLE-UXD-2023",
+  },
+  {
+    id: "cert-6",
+    title: "Node.js Application Development",
+    issuer: "OpenJS Foundation (edX)",
+    date: "2022-12",
+    image: "/certificates/placeholder.svg",
+    url: "https://www.edx.org",
+    credentialId: "NODEJS-2022",
+  },
+];
