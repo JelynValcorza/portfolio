@@ -35,7 +35,6 @@ export function Footer() {
     <footer className="bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
-          {/* Brand */}
           <div className="sm:col-span-1">
             <div className="flex items-center gap-2.5 mb-3">
               <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-white text-sm font-bold select-none">
@@ -49,7 +48,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-secondary-foreground/50 mb-4">
               Navigation
@@ -68,7 +66,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-secondary-foreground/50 mb-4">
               Connect
@@ -95,7 +92,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="border-t border-secondary-foreground/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-secondary-foreground/50 flex items-center gap-1.5">
             © {new Date().getFullYear()} Jelyn Valcorza. Built with{" "}

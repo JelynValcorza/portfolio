@@ -65,7 +65,6 @@ export function Skills() {
           title="Technologies I Work With"
           description="A comprehensive set of tools and technologies I use to build modern web applications."
         />
-        {/* Category filter tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           <button
             onClick={() => setActiveCategory("all")}
@@ -98,7 +97,6 @@ export function Skills() {
           })}
         </div>
 
-        {/* Skills */}
         <div className="space-y-10">
           {filteredGroups.map((group, groupIndex) => {
             const meta = categoryMeta[group.category];
@@ -110,7 +108,6 @@ export function Skills() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: groupIndex * 0.08 }}
               >
-                {/* Group label */}
                 <div className="flex items-center gap-3 mb-5">
                   <span
                     className={cn(
@@ -124,7 +121,6 @@ export function Skills() {
                   <div className="flex-1 h-px bg-border" aria-hidden="true" />
                 </div>
 
-                {/* Skills grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                   {group.skills.map((skill, skillIndex) => (
                     <motion.div
@@ -152,7 +148,6 @@ export function Skills() {
                         </span>
                       </div>
 
-                      {/* Progress bar */}
                       <div
                         className="h-1.5 bg-muted rounded-full overflow-hidden"
                         role="progressbar"

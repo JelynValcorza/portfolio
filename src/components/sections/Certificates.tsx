@@ -33,7 +33,6 @@ export function Certificates() {
               whileHover={{ y: -4 }}
               className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              {/* Certificate image */}
               <div className="relative aspect-4/3 bg-muted overflow-hidden shrink-0">
                 <Image
                   src={cert.image}
@@ -45,7 +44,7 @@ export function Certificates() {
                     target.style.display = "none";
                   }}
                 />
-                {/* Fallback */}
+
                 <div className="absolute inset-0 bg-linear-to-br from-primary/15 to-accent/10 flex items-center justify-center">
                   <Award
                     className="w-14 h-14 text-primary/30"
@@ -54,7 +53,6 @@ export function Certificates() {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="font-semibold text-foreground text-sm leading-snug mb-1 group-hover:text-primary transition-colors">
                   {cert.title}

@@ -77,7 +77,6 @@ export function About() {
               </div>
             </div>
 
-            {/* Status card */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +103,6 @@ export function About() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Content */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -137,7 +135,6 @@ export function About() {
               </div>
             </div>
 
-            {/* Highlights grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {highlights.map((item, i) => (
                 <motion.div
@@ -166,7 +163,6 @@ export function About() {
               ))}
             </div>
 
-            {/* Passion */}
             <div className="flex items-start gap-3 p-4 bg-blue-500/5 dark:bg-blue-400/5 border border-blue-500/15 dark:border-blue-400/15 rounded-xl">
               <Heart
                 className="w-4 h-4 text-pink-500 dark:text-pink-400 shrink-0 mt-0.5"
@@ -179,7 +175,6 @@ export function About() {
               </p>
             </div>
 
-            {/* Education */}
             <div>
               <h4 className="flex items-center gap-2 text-xs font-semibold text-foreground uppercase tracking-wider mb-3">
                 <GraduationCap

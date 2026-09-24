@@ -31,7 +31,6 @@ function ProjectCard({
       onClick={onClick}
       className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-blue-500/35 dark:hover:border-blue-400/35 hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col card-glow"
     >
-      {/* Image */}
       <div className="relative aspect-video bg-muted overflow-hidden shrink-0">
         <Image
           src={project.image}
@@ -43,19 +42,16 @@ function ProjectCard({
             target.style.display = "none";
           }}
         />
-        {/* Fallback gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/10 flex items-center justify-center">
           <span className="text-3xl font-bold text-primary/40 select-none">
             {project.title.substring(0, 2).toUpperCase()}
           </span>
         </div>
-        {/* Hover overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
           <span className="text-xs text-white bg-black/40 backdrop-blur-sm px-2 py-1 rounded-lg ml-auto">
             View details →
           </span>
         </div>
-        {/* Category badge */}
         <div className="absolute top-3 left-3">
           <span className="text-[10px] font-semibold uppercase tracking-wide px-2 py-1 bg-black/50 text-white rounded-lg backdrop-blur-sm">
             {project.category}
@@ -63,7 +59,6 @@ function ProjectCard({
         </div>
       </div>
 
-      {/* Content */}
       <div className="p-5 flex flex-col flex-1">
         <div className="flex items-start justify-between gap-2 mb-2">
           <h3 className="font-semibold text-foreground text-base leading-snug group-hover:text-primary transition-colors">
@@ -77,7 +72,6 @@ function ProjectCard({
           {project.description}
         </p>
 
-        {/* Tech badges */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {project.technologies.slice(0, 4).map((tech) => (
             <Badge key={tech} variant="secondary">
@@ -91,7 +85,6 @@ function ProjectCard({
           )}
         </div>
 
-        {/* Actions */}
         <div
           className="flex items-center gap-2"
           onClick={(e) => e.stopPropagation()}
@@ -152,11 +145,9 @@ export function Projects() {
         </div>
       </div>
 
-      {/* Project detail modal */}
       <Dialog isOpen={!!selected} onClose={() => setSelected(null)}>
         {selected && (
           <div>
-            {/* Modal image */}
             <div className="relative aspect-video bg-muted rounded-t-2xl overflow-hidden">
               <Image
                 src={selected.image}
@@ -194,7 +185,6 @@ export function Projects() {
                 {selected.longDescription}
               </p>
 
-              {/* Features */}
               <div className="mb-5">
                 <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">
                   Key Features
@@ -215,7 +205,6 @@ export function Projects() {
                 </ul>
               </div>
 
-              {/* Tech stack */}
               <div className="mb-6">
                 <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">
                   Technologies Used
@@ -229,7 +218,6 @@ export function Projects() {
                 </div>
               </div>
 
-              {/* Actions */}
               <div className="flex flex-wrap gap-3">
                 <a
                   href={selected.github}

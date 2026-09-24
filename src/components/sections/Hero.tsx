@@ -51,20 +51,15 @@ export function Hero() {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden bg-background"
     >
-      {/* Animated tech background */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        {/* Particle network canvas */}
         <ParticleCanvas />
 
-        {/* Subtle dot grid overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(circle,#e2e8f020_1px,transparent_1px)] bg-size-[32px_32px] dark:bg-[radial-gradient(circle,#1e293b40_1px,transparent_1px)]" />
 
-        {/* Animated gradient orbs */}
         <div className="absolute top-0 right-0 w-175 h-175 bg-blue-500/10 dark:bg-blue-400/8 rounded-full blur-[140px] animate-blob" />
         <div className="absolute bottom-0 left-0 w-125 h-125 bg-violet-500/10 dark:bg-violet-400/8 rounded-full blur-[120px] animate-blob [animation-delay:4s]" />
         <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-cyan-500/6 dark:bg-cyan-400/6 rounded-full blur-[100px] animate-blob [animation-delay:8s]" />
 
-        {/* Floating tech glyphs */}
         <span className="hidden sm:block absolute top-[8%] left-[4%] text-primary/8 dark:text-primary/10 font-mono text-sm font-semibold select-none animate-float [animation-delay:0s]">
           &lt;/&gt;
         </span>
@@ -87,14 +82,12 @@ export function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[calc(100vh-4rem)] py-20">
-          {/* Left: Content */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
             className="flex flex-col items-center lg:items-start text-center lg:text-left"
           >
-            {/* Available badge */}
             <motion.div variants={itemVariants}>
               <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-green-500/8 dark:bg-green-400/8 border border-green-500/25 dark:border-green-400/25 rounded-full text-green-600 dark:text-green-400 text-xs font-semibold mb-6">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
@@ -102,7 +95,6 @@ export function Hero() {
               </span>
             </motion.div>
 
-            {/* Headline */}
             <motion.h1
               variants={itemVariants}
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-foreground leading-[1.08] mb-3"
@@ -112,7 +104,6 @@ export function Hero() {
               <span className="text-foreground">Valcorza</span>
             </motion.h1>
 
-            {/* Subtitle */}
             <motion.p
               variants={itemVariants}
               className="text-lg sm:text-xl font-medium text-muted-foreground mb-2"
@@ -120,7 +111,6 @@ export function Hero() {
               Software Developer &amp; Frontend Developer
             </motion.p>
 
-            {/* Location */}
             <motion.div
               variants={itemVariants}
               className="flex items-center justify-center lg:justify-start gap-1.5 text-sm text-muted-foreground mb-6"
@@ -132,7 +122,6 @@ export function Hero() {
               <span>Philippines</span>
             </motion.div>
 
-            {/* Bio */}
             <motion.p
               variants={itemVariants}
               className="text-base text-muted-foreground max-w-md leading-relaxed mb-8"
@@ -142,7 +131,6 @@ export function Hero() {
               — turning ideas into exceptional digital experiences.
             </motion.p>
 
-            {/* CTAs */}
             <motion.div
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-3 mb-8"
@@ -170,7 +158,6 @@ export function Hero() {
               </a>
             </motion.div>
 
-            {/* Social links */}
             <motion.div
               variants={itemVariants}
               className="flex items-center gap-2.5"
@@ -190,7 +177,6 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -198,7 +184,6 @@ export function Hero() {
             className="flex items-center justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* Decorative rings */}
               <div
                 className="absolute -inset-6 rounded-[2.5rem] border border-dashed border-blue-500/25 dark:border-blue-400/20 animate-spin-slow"
                 aria-hidden="true"
@@ -208,7 +193,6 @@ export function Hero() {
                 aria-hidden="true"
               />
 
-              {/* Profile image */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-3xl overflow-hidden border-2 border-blue-500/30 dark:border-blue-400/25 shadow-2xl shadow-blue-500/10 dark:shadow-blue-400/10 bg-muted animate-glow-pulse">
                 <Image
                   src={profileImage}
@@ -248,7 +232,6 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Stats row */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

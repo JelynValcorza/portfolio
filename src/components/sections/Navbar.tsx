@@ -40,7 +40,6 @@ export function Navbar() {
             className="flex items-center justify-between h-16"
             aria-label="Main navigation"
           >
-            {/* Logo */}
             <a
               href="#home"
               onClick={(e) => {
@@ -58,7 +57,6 @@ export function Navbar() {
               </span>
             </a>
 
-            {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-0.5">
               {navLinks.map((link) => (
                 <button
@@ -71,7 +69,6 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* Actions */}
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <a
@@ -99,7 +96,6 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div

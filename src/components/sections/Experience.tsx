@@ -48,7 +48,6 @@ export function Experience() {
 
         <div className="max-w-3xl mx-auto">
           <div className="relative">
-            {/* Vertical timeline line */}
             <div
               className="absolute left-7.75 top-0 bottom-0 w-px bg-linear-to-b from-blue-500/70 via-violet-500/40 to-border/20"
               aria-hidden="true"
@@ -66,7 +65,6 @@ export function Experience() {
                     transition={{ duration: 0.5, delay: i * 0.1 }}
                     className="relative pl-16"
                   >
-                    {/* Timeline dot */}
                     <div className="absolute left-0 top-5 flex items-center justify-center w-15.5">
                       <div
                         className={cn(
@@ -81,9 +79,7 @@ export function Experience() {
                       </div>
                     </div>
 
-                    {/* Card */}
                     <div className="bg-card border border-border rounded-2xl p-5 sm:p-6 hover:border-blue-500/25 dark:hover:border-blue-400/25 card-glow transition-all duration-200">
-                      {/* Header */}
                       <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                         <div>
                           <h3 className="font-semibold text-foreground text-base">
@@ -109,7 +105,6 @@ export function Experience() {
                         </div>
                       </div>
 
-                      {/* Location */}
                       <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-3">
                         <MapPin
                           className="w-3.5 h-3.5 shrink-0"
@@ -118,12 +113,10 @@ export function Experience() {
                         {exp.location}
                       </div>
 
-                      {/* Description */}
                       <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                         {exp.description}
                       </p>
 
-                      {/* Responsibilities */}
                       <div className="mb-4">
                         <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
                           Responsibilities
@@ -144,7 +137,6 @@ export function Experience() {
                         </ul>
                       </div>
 
-                      {/* Achievements */}
                       {exp.achievements.length > 0 && (
                         <div className="mb-4">
                           <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2 flex items-center gap-1.5">
@@ -171,7 +163,6 @@ export function Experience() {
                         </div>
                       )}
 
-                      {/* Tech */}
                       <div className="flex flex-wrap gap-1.5">
                         {exp.technologies.map((tech) => (
                           <Badge key={tech} variant="secondary">

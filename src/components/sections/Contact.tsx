@@ -62,14 +62,12 @@ export function Contact() {
 
   const onSubmit = async (data: FormData) => {
     setSending(true);
-    // Simulate network request
     await new Promise((resolve) => setTimeout(resolve, 1400));
     setSending(false);
     reset();
     toast.success("Message sent!", {
       description: "Thanks for reaching out, I'll get back to you shortly.",
     });
-    // Prevent unused variable warning
     void data;
   };
 
@@ -87,7 +85,6 @@ export function Contact() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
-          {/* Left: Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -106,7 +103,6 @@ export function Contact() {
               </p>
             </div>
 
-            {/* Contact cards */}
             <div className="flex flex-col gap-3">
               {contactInfo.map((item) => (
                 <div
@@ -148,7 +144,6 @@ export function Contact() {
               ))}
             </div>
 
-            {/* Availability status */}
             <div className="flex items-center gap-2 px-3.5 py-3 bg-green-500/8 border border-green-500/20 rounded-xl">
               <span
                 className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0"
@@ -160,7 +155,6 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* Right: Contact form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -174,7 +168,6 @@ export function Contact() {
               className="bg-card border border-border rounded-2xl p-6 sm:p-7 flex flex-col gap-5"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {/* Name */}
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="name">Full Name</Label>
                   <Input
@@ -196,7 +189,6 @@ export function Contact() {
                   )}
                 </div>
 
-                {/* Email */}
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="email">Email Address</Label>
                   <Input
@@ -220,7 +212,6 @@ export function Contact() {
                 </div>
               </div>
 
-              {/* Subject */}
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="subject">Subject</Label>
                 <Input
@@ -243,7 +234,6 @@ export function Contact() {
                 )}
               </div>
 
-              {/* Message */}
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
