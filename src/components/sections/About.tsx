@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { SectionHeading } from "@/src/components/common/SectionHeading";
 import { TechSectionBackground } from "@/src/components/common/TechSectionBackground";
+import MyProfileImage from "@/public/images/me-profile.jpg";
 
 const highlights = [
   { icon: MapPin, label: "Based in", value: "Philippines" },
@@ -68,7 +69,7 @@ export function About() {
               />
               <div className="relative h-full rounded-3xl overflow-hidden border border-border shadow-xl bg-muted">
                 <Image
-                  src="/profile.svg"
+                  src={MyProfileImage}
                   alt="Jelyn Valcorza"
                   fill
                   className="object-cover"
