@@ -65,6 +65,8 @@ export function Skills() {
           title="Technologies I Work With"
           description="A comprehensive set of tools and technologies I use to build modern web applications."
         />
+
+        {/* my portfolio skills filter buttons */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           <button
             onClick={() => setActiveCategory("all")}
